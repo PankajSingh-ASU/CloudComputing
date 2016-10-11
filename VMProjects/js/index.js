@@ -2,17 +2,25 @@ $('.message a').click(function(){
    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
 
-$("button").click(function() {
+$("#submitlogin").click(function() {
 	console.log('Lgin method');
-  inputs = "Pankaj Singh";  //grab then inputs of your form #loginform
+  var uname=$("#username").val();
+  var pwd=$("#password").val();//grab then inputs of your form #loginform
+  //console.log(uname,pwd);
+  if(uname=='admin'&&pwd=='admin')
+	  {
+	  console.log("successful")
+
 $.ajax ({
 		
        url: "success.html",
-       data: inputs,
+       data: "abc",
        success: function() {
-        $("#login").html("You are now logged in!");
+    	   console.log('I am done');
+    	   window.location.href='ListVMs.html';
 }
   });
+	  }
 })
 
 function validateFormOnSubmit(theForm) {

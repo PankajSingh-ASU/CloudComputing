@@ -8,8 +8,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript">
     
-      google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
+     /*  google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart); */
       
     </script>
     <style type="text/css">
@@ -45,16 +45,16 @@ li a:hover:not(.active) {
 }
 </style>
   </head>
-  <body>
+  <body id="VMDetails" onload="loadVMData()">
   <ul>
   <li><a  href="#home">Instances</a></li>
   <li><a class="active" href="#news">Project</a></li>
   <li><a href="#contact">Logout</a></li>
   
 </ul>
-<
+
 <div style="margin-left:25%;padding:1px 16px;height:1000px;">
-	<h1>Utilization of Virtual Machine 1</h1>
+	<h1 id='heading'>Utilization of Virtual Machine 1</h1>
   <div class="container-fluid">
   <div class="row">
   	<div class="col-sm-6" >

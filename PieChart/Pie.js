@@ -1,12 +1,9 @@
 
       
-      var dataValues = [
-          ['Task', 'Hours per Day'],
-          ['Work',     11],
-          ['Eat',      2],
-          ['Commute',  2],
-          ['Watch TV', 2],
-          ['Sleep',    7]
+      var Memory = [
+          ['CPU Usage', 'Memory in GBs '],
+          ['used',     10],
+          ['Unused', 90]
         ];
 
         var options = {
